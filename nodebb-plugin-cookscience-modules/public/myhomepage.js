@@ -6,13 +6,12 @@ $(window).on('action:ajaxify.end', function(event, data){
 		searchInput.focus();
 		searchInput.keydown(doSearch);
 		$('#search-btn').click(doSearch);
-		
-		require(['composer'], function(composer) {
-			$('#new-topic').click(function(){
-				composer.newTopic(0);
-			});
-		});
 	}
+	require(['composer'], function(composer) {
+		$('.new-topic').off('click').click(function(){
+			composer.newTopic(0);
+		});
+	});
 });
 
 function doSearch(event){

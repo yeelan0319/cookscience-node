@@ -1,5 +1,8 @@
+'use strict';
+
+var _ = require('underscore')._;
+
 (function(module) {
-	"use strict";
 
 	var Plugin = {};
 
@@ -27,6 +30,14 @@
 
 	Plugin.addCustomField = function(params, callback){
 		params.fields = params.fields.concat(['institution', 'lab', 'discipline', 'receiveAd']);
+		callback(null, params);
+	}
+
+	Plugin.addProtocolField = function(params, callback){
+		params.userData.protocols = _.filter(params.userData.posts, function(post){
+			return post.index === 1;
+		})
+		params.userData.protocolsCount = params.userData.protocols.length;
 		callback(null, params);
 	}
 	

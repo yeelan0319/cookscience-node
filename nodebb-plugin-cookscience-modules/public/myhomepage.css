@@ -179,3 +179,9 @@ body{
 .register-container, .userinfo-container{
     margin-top: 40px;
 }
+
+.new-topic{
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
