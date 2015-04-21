@@ -1,0 +1,47 @@
+{
+  "name": "nodebb-plugin-editor-plus",
+  "version": "0.1.2",
+  "description": "Allows you to take NodeBB's composer to full mode.",
+  "main": "library.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tristabeau/nodebb-plugin-editor-plus"
+  },
+  "keywords": [
+    "nodebb",
+    "plugin",
+    "composer",
+    "buttons"
+  ],
+  "author": {
+    "name": "Alexis Lapasset",
+    "email": "tristabeau@free.fr"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tristabeau/nodebb-plugin-editor-plus/issues"
+  },
+  "maintainers": [
+    {
+      "name": "tristabeau",
+      "email": "tristabeau@free.fr"
+    }
+  ],
+  "gitHead": "d09fd1d136ee1bf6d5226c67c30ddb5d7d9b0372",
+  "homepage": "https://github.com/tristabeau/nodebb-plugin-editor-plus",
+  "_id": "nodebb-plugin-editor-plus@0.1.2",
+  "scripts": {},
+  "_shasum": "ad1d52f62008deb33a2103c43f0ce32983525543",
+  "_from": "nodebb-plugin-editor-plus@latest",
+  "_npmVersion": "1.5.0-alpha-4",
+  "_npmUser": {
+    "name": "tristabeau",
+    "email": "tristabeau@free.fr"
+  },
+  "dist": {
+    "shasum": "ad1d52f62008deb33a2103c43f0ce32983525543",
+    "tarball": "http://registry.npmjs.org/nodebb-plugin-editor-plus/-/nodebb-plugin-editor-plus-0.1.2.tgz"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/nodebb-plugin-editor-plus/-/nodebb-plugin-editor-plus-0.1.2.tgz"
+}

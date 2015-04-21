@@ -1,0 +1,49 @@
+{
+  "name": "nodebb-plugin-video",
+  "version": "0.0.7",
+  "description": "NodeBB plugin play HLS and mp4 video in html5",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mani95lisa/nodebb-plugin-video"
+  },
+  "keywords": [
+    "nodebb",
+    "plugin",
+    "video"
+  ],
+  "author": {
+    "name": "Mani Wang",
+    "email": "mani95lisa@gmail.com",
+    "url": "https://github.com/mani95lisa"
+  },
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/mani95lisa/nodebb-plugin-video/issues"
+  },
+  "homepage": "https://github.com/mani95lisa/nodebb-plugin-video",
+  "gitHead": "a807760e89e61192838d63125a1c1ff5a68c33b5",
+  "_id": "nodebb-plugin-video@0.0.7",
+  "_shasum": "f3c1cf8a19a70b3d409354559c74afb7673df551",
+  "_from": "nodebb-plugin-video@latest",
+  "_npmVersion": "1.4.16",
+  "_npmUser": {
+    "name": "mani",
+    "email": "mani95lisa@gmail.com"
+  },
+  "maintainers": [
+    {
+      "name": "mani",
+      "email": "mani95lisa@gmail.com"
+    }
+  ],
+  "dist": {
+    "shasum": "f3c1cf8a19a70b3d409354559c74afb7673df551",
+    "tarball": "http://registry.npmjs.org/nodebb-plugin-video/-/nodebb-plugin-video-0.0.7.tgz"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/nodebb-plugin-video/-/nodebb-plugin-video-0.0.7.tgz"
+}

@@ -1,0 +1,54 @@
+{
+  "name": "nodebb-plugin-emailer-mailgun",
+  "version": "0.4.0",
+  "description": "An emailer plugin for NodeBB using Mailgun as a third party service",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/julianlam/nodebb-plugin-emailer-mailgun"
+  },
+  "keywords": [
+    "nodebb",
+    "plugin",
+    "emailer",
+    "mailgun"
+  ],
+  "author": {
+    "name": "Julian Lam",
+    "email": "julian@designcreateplay.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/julianlam/nodebb-plugin-emailer-mailgun/issues"
+  },
+  "homepage": "https://github.com/julianlam/nodebb-plugin-emailer-mailgun",
+  "dependencies": {
+    "path": "~0.4.9",
+    "mailgun-js": "^0.5.4"
+  },
+  "nbbpm": {
+    "compatibility": "^0.6.0"
+  },
+  "gitHead": "2381a9762e6ada58fc324fcc9fcea1f255012f1c",
+  "_id": "nodebb-plugin-emailer-mailgun@0.4.0",
+  "scripts": {},
+  "_shasum": "fbd9e786576177725d784d8911bbac8f833359df",
+  "_from": "nodebb-plugin-emailer-mailgun@latest",
+  "_npmVersion": "2.0.0",
+  "_npmUser": {
+    "name": "julianlam",
+    "email": "julian@designcreateplay.com"
+  },
+  "maintainers": [
+    {
+      "name": "julianlam",
+      "email": "julian@designcreateplay.com"
+    }
+  ],
+  "dist": {
+    "shasum": "fbd9e786576177725d784d8911bbac8f833359df",
+    "tarball": "http://registry.npmjs.org/nodebb-plugin-emailer-mailgun/-/nodebb-plugin-emailer-mailgun-0.4.0.tgz"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/nodebb-plugin-emailer-mailgun/-/nodebb-plugin-emailer-mailgun-0.4.0.tgz"
+}

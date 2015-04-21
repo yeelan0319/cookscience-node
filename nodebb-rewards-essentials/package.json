@@ -1,0 +1,32 @@
+{
+  "name": "nodebb-rewards-essentials",
+  "version": "0.0.1",
+  "description": "Essential Rewards Starter Pack for NodeBB",
+  "main": "library.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/psychobunny/nodebb-rewards-essentials"
+  },
+  "keywords": [
+    "nodebb",
+    "plugin",
+    "rewards",
+    "conditions"
+  ],
+  "author": {
+    "name": "psychobunny",
+    "email": "psycho.bunny@hotmail.com"
+  },
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/psychobunny/nodebb-rewards-essentials/issues"
+  },
+  "readmeFilename": "README.md",
+  "readme": "# Essential Rewards Starter Pack\r\n\r\nThis plugin comes with some basic core conditions (ex. \"If user has reputation > X\") and rewards (ex. \"Add user to group\"). Use this as a skeleton to create your own reward packs.\r\n\r\n\r\n## Installation\r\n\r\n    npm install nodebb-rewards-essentials",
+  "_id": "nodebb-rewards-essentials@0.0.1",
+  "dist": {
+    "shasum": "620ce4a3261b057614ab40513781628c904c02bf"
+  },
+  "_from": "nodebb-rewards-essentials@^0.0.1",
+  "_resolved": "https://registry.npmjs.org/nodebb-rewards-essentials/-/nodebb-rewards-essentials-0.0.1.tgz"
+}

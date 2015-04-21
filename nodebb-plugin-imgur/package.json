@@ -1,0 +1,56 @@
+{
+  "name": "nodebb-plugin-imgur",
+  "version": "0.1.4",
+  "description": "A Plugin that uploads images to imgur",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/barisusakli/nodebb-plugin-imgur"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodebb",
+    "plugin",
+    "imgur"
+  ],
+  "author": {
+    "name": "Baris Usakli",
+    "email": "baris@designcreateplay.com"
+  },
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "request": "^2.48.0",
+    "winston": "~0.8.3"
+  },
+  "nbbpm": {
+    "compatibility": "^0.6.0"
+  },
+  "gitHead": "fd5268a6cd9dca916c355e241cf53757c3b99442",
+  "bugs": {
+    "url": "https://github.com/barisusakli/nodebb-plugin-imgur/issues"
+  },
+  "homepage": "https://github.com/barisusakli/nodebb-plugin-imgur",
+  "_id": "nodebb-plugin-imgur@0.1.4",
+  "_shasum": "9b4b0d2882c1732208c9121ebfe811c1fdc8dc2f",
+  "_from": "nodebb-plugin-imgur@latest",
+  "_npmVersion": "2.5.1",
+  "_nodeVersion": "0.12.0",
+  "_npmUser": {
+    "name": "baris",
+    "email": "barisusakli@gmail.com"
+  },
+  "maintainers": [
+    {
+      "name": "baris",
+      "email": "barisusakli@gmail.com"
+    }
+  ],
+  "dist": {
+    "shasum": "9b4b0d2882c1732208c9121ebfe811c1fdc8dc2f",
+    "tarball": "http://registry.npmjs.org/nodebb-plugin-imgur/-/nodebb-plugin-imgur-0.1.4.tgz"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/nodebb-plugin-imgur/-/nodebb-plugin-imgur-0.1.4.tgz"
+}
