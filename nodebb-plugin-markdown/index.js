@@ -86,16 +86,24 @@ name: file
 },
 
 parsePost: function(data, callback) {
-	data.postData.content = JSON.parse(data.postData.content);
 		   if (data && data.postData && data.postData.content) {
-			if(typeof data.postData.content === "string"){
-			   data.postData.content = parser.render(data.postData.content);
-			} 
-			else {
+			try {
+			   data.postData.content = JSON.parse(data.postData.content);
+			}
+			catch(e){
+			   console.log("This string cannot be parsed" + data.postData.content)
+			}	
+			finally{
+			    if(typeof data.postData.content === "string"){
+			       data.postData.content = parser.render(data.postData.content);
+		            }    
+			    else {
 				_.each(data.postData.content, function(content, key){
-	data.postData.content[key] = parser.render(content);
-});
-}}
+				    data.postData.content[key] = parser.render(content);
+				});
+			    }
+                        }
+                   }
 		   callback(null, data);
 	   },
 
