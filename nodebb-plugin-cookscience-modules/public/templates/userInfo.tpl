@@ -1,19 +1,19 @@
 <div class="row">
 	<div class="well">
-		<h2>Thank you for your registration!</h2>
+		<h2>Thank you for confirming your email!</h2>
 		<h4>Please help us complete your information</h4>
 		<div class="col-xs-12 userinfo-container">
-			<form class="form-horizontal" role="form" action="{relative_path}/register" method="post">
+			<form class="form-horizontal" role="form">
 				<div class="form-group">
-					<label for="email" class="col-lg-2 control-label">Institution</label>
+					<label for="institution" class="col-lg-2 control-label">Institution</label>
 					<div class="col-lg-5">
-						<input class="form-control" type="text" placeholder="Enter research institution" name="institution" id="institution" autocorrect="off" autocapitalize="off" />
+						<input class="form-control" type="text" placeholder="Enter research institution" name="institution" id="inputInstitution" autocorrect="off" autocapitalize="off" />
 					</div>
 				</div>
 				<div class="form-group">
-					<label for="username" class="col-lg-2 control-label">Research group</label>
+					<label for="lab" class="col-lg-2 control-label">Research group</label>
 					<div class="col-lg-5">
-						<input class="form-control" type="text" placeholder="Enter research group" name="lab" id="lab" autocorrect="off" autocapitalize="off" />
+						<input class="form-control" type="text" placeholder="Enter research group" name="lab" id="inputLab" autocorrect="off" autocapitalize="off" />
 					</div>
 				</div>
 				<div class="form-group">
@@ -21,69 +21,69 @@
 					<div class="col-lg-10">
 						<div class="row">
 							<label class="col-xs-6 col-md-3">
-						      	<input type="checkbox" name="discipline_group[]" value="" /> Animal Techniques
+						      	<input type="checkbox" name="discipline_group[]" value="1" /> Animal Techniques
 						    </label>
 							<label class="col-xs-6 col-md-3">
-						      	<input type="checkbox" name="discipline_group[]" value="" /> Biochecmistry
+						      	<input type="checkbox" name="discipline_group[]" value="2" /> Biochecmistry
 						    </label>
 						    <label class="col-xs-6 col-md-3">
-						      	<input type="checkbox" name="discipline_group[]" value="" /> Bioinformatics & Biostatistics
+						      	<input type="checkbox" name="discipline_group[]" value="3" /> Bioinformatics & Biostatistics
 						    </label>
 						    <label class="col-xs-6 col-md-3">
-						      	<input type="checkbox" name="discipline_group[]" value="" /> Cell Biology
+						      	<input type="checkbox" name="discipline_group[]" value="4" /> Cell Biology
 						    </label>
 						</div>
 						<div class="row">
 							<label class="col-xs-6 col-md-3">
-						      	<input type="checkbox" name="discipline_group[]" value="" /> Developmental Biology
+						      	<input type="checkbox" name="discipline_group[]" value="5" /> Developmental Biology
 						    </label>
 							<label class="col-xs-6 col-md-3">
-						      	<input type="checkbox" name="discipline_group[]" value="" /> Essential Data
+						      	<input type="checkbox" name="discipline_group[]" value="6" /> Essential Data
 						    </label>
 						    <label class="col-xs-6 col-md-3">
-						      	<input type="checkbox" name="discipline_group[]" value="" /> General Lab Techniques
+						      	<input type="checkbox" name="discipline_group[]" value="7" /> General Lab Techniques
 						    </label>
 						    <label class="col-xs-6 col-md-3">
-						      	<input type="checkbox" name="discipline_group[]" value="" /> Genetics & Genomics
+						      	<input type="checkbox" name="discipline_group[]" value="8" /> Genetics & Genomics
 						    </label>
 						</div>
 						<div class="row">
 							<label class="col-xs-6 col-md-3">
-						      	<input type="checkbox" name="discipline_group[]" value="" /> Histology
+						      	<input type="checkbox" name="discipline_group[]" value="9" /> Histology
 						    </label>
 							<label class="col-xs-6 col-md-3">
-						      	<input type="checkbox" name="discipline_group[]" value="" /> Imaging Techniques
+						      	<input type="checkbox" name="discipline_group[]" value="10" /> Imaging Techniques
 						    </label>
 						    <label class="col-xs-6 col-md-3">
-						      	<input type="checkbox" name="discipline_group[]" value="" /> Immuology
+						      	<input type="checkbox" name="discipline_group[]" value="11" /> Immuology
 						    </label>
 						    <label class="col-xs-6 col-md-3">
-						      	<input type="checkbox" name="discipline_group[]" value="" /> Media & Solutions
+						      	<input type="checkbox" name="discipline_group[]" value="12" /> Media & Solutions
 						    </label>
 						</div>
 						<div class="row">
 							<label class="col-xs-6 col-md-3">
-						      	<input type="checkbox" name="discipline_group[]" value="" /> Microbiology
+						      	<input type="checkbox" name="discipline_group[]" value="13" /> Microbiology
 						    </label>
 							<label class="col-xs-6 col-md-3">
-						      	<input type="checkbox" name="discipline_group[]" value="" /> Model Organisms
+						      	<input type="checkbox" name="discipline_group[]" value="14" /> Model Organisms
 						    </label>
 						    <label class="col-xs-6 col-md-3">
-						      	<input type="checkbox" name="discipline_group[]" value="" /> Molecular Biology
+						      	<input type="checkbox" name="discipline_group[]" value="15" /> Molecular Biology
 						    </label>
 						    <label class="col-xs-6 col-md-3">
-						      	<input type="checkbox" name="discipline_group[]" value="" /> Neuroscience
+						      	<input type="checkbox" name="discipline_group[]" value="16" /> Neuroscience
 						    </label>
 						</div>
 						<div class="row">
 							<label class="col-xs-6 col-md-3">
-						      	<input type="checkbox" name="discipline_group[]" value="" /> Physiology
+						      	<input type="checkbox" name="discipline_group[]" value="17" /> Physiology
 						    </label>
 							<label class="col-xs-6 col-md-3">
-						      	<input type="checkbox" name="discipline_group[]" value="" /> Plant Biology
+						      	<input type="checkbox" name="discipline_group[]" value="18" /> Plant Biology
 						    </label>
 						    <label class="col-xs-6 col-md-3">
-						      	<input type="checkbox" name="discipline_group[]" value="" /> Research Tools
+						      	<input type="checkbox" name="discipline_group[]" value="19" /> Research Tools
 						    </label>
 						</div>
 					</div>
@@ -91,10 +91,10 @@
 
 				<div class="form-group">
 					<label class="col-xs-offset-2 col-xs-10">
-				      	<input type="checkbox" name="receiveAd" value="" checked="true" /> I would like to receive vendor promotion information
+				      	<input type="checkbox" name="receiveAd" checked="true" /> I would like to receive vendor promotion information
 				    </label>
 				</div>
-
+				<input type="hidden" id="inputUID" value="{uid}"><br />
 				<div class="form-group">
 					<div class="pull-right col-xs-12 col-lg-2">
 						<button class="btn btn-primary btn-block" id="submit" type="submit">Submit</button>

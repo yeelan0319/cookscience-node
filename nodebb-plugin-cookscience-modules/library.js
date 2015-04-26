@@ -20,20 +20,36 @@ var _ = require('underscore')._;
 			res.json({template: {name: "home"}});
 			//res.json({});
 		});
-		//app.get('/complete-institution-info', params.middleware.buildHeader, fillAdditionalInfo);
+		app.get('/confirmation-email-sent', params.middleware.buildHeader, renderConfirmEmailNotification);
+		app.get('/complete-user-info', params.middleware.buildHeader, fillAdditionalInfo);
+		
 		callback();
 	};
 
-	// function fillAdditionalInfo(req, res, next){
-	// 	res.render('userInfo', {});
-	// };
+	function renderConfirmEmailNotification(req, res, next){
+		res.render('confirmemail', {});
+	}
 
-	Plugin.addCustomField = function(params, callback){
+	Plugin.addCustomRegisterStep = function(params, callback){
+		params.referrer = "/confirmation-email-sent";
+		callback(null, params);
+	}
+
+	function fillAdditionalInfo(req, res, callback){
+		if(req.uid){
+			res.render('userInfo', {uid: req.uid});
+		}
+		else{
+			return callback(new Error('[[error:not-logged-in]]'));
+		}	
+	};
+
+	Plugin.addCustomFieldInProfileEdit = function(params, callback){
 		params.fields = params.fields.concat(['institution', 'lab', 'discipline', 'receiveAd']);
 		callback(null, params);
 	}
 
-	Plugin.addProtocolField = function(params, callback){
+	Plugin.showUserProtocolPostNumberInProfile = function(params, callback){
 		params.userData.protocols = _.filter(params.userData.posts, function(post){
 			return post.index === 1;
 		})

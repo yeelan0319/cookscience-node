@@ -7,6 +7,29 @@ $(window).on('action:ajaxify.end', function(event, data){
 		searchInput.keydown(doSearch);
 		$('#search-btn').click(doSearch);
 	}
+	if(data.url === "complete-user-info"){
+		$('#submit').click(function(){
+			var userData = {
+				uid: $("#inputUID").val(),
+				institution: $('#inputInstitution').val(),
+				lab: $('#inputLab').val(),
+				receiveAd: $("input[name='receiveAd']").prop('checked')
+			};
+			var discipline = [];
+			$("input[name='discipline_group[]']:checked").each(function() {
+			  	discipline.push($(this).val());
+			});
+			userData.discipline = discipline.join(",");
+			socket.emit('user.updateProfile', userData, function(err, data) {
+				if (err) {
+					return app.alertError(err.message);
+				}
+				window.location = '/';
+				return false;
+			});			
+		});
+		return false;
+	}
 	require(['composer'], function(composer) {
 		$('.new-topic').off('click').click(function(){
 			composer.newTopic(0);

@@ -6,9 +6,9 @@
 	"hooks": [
 
 		{ "hook": "static:app.load", "method": "init"},
-
-		{ "hook": "filter:user.updateProfile", "method": "addCustomField"},
-		{ "hook": "filter:user.account", "method": "addProtocolField"}
+		{ "hook": "filter:register.complete", "method": "addCustomRegisterStep"},
+		{ "hook": "filter:user.updateProfile", "method": "addCustomFieldInProfileEdit"},
+		{ "hook": "filter:user.account", "method": "showUserProtocolPostNumberInProfile"}
 		
 	],
 	"templates": "public/templates",
