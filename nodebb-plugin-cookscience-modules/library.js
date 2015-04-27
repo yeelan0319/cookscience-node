@@ -1,6 +1,7 @@
 'use strict';
 
-var _ = require('underscore')._;
+var _ = require('underscore')._,
+	categories = module.parent.require('./categories');
 
 (function(module) {
 
@@ -37,7 +38,12 @@ var _ = require('underscore')._;
 
 	function fillAdditionalInfo(req, res, callback){
 		if(req.uid){
-			res.render('userInfo', {uid: req.uid});
+			categories.getAllCategories(req.uid, function(err, categories){
+				if(err){
+					return callback(new Error('[[error:not-logged-in]]'));
+				}
+				res.render('userInfo', {uid: req.uid, categories: categories});
+			});	
 		}
 		else{
 			return callback(new Error('[[error:not-logged-in]]'));

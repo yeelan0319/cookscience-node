@@ -18,74 +18,12 @@
 				</div>
 				<div class="form-group">
 					<label for="username" class="col-lg-2 control-label">Discipline</label>
-					<div class="col-lg-10">
-						<div class="row">
-							<label class="col-xs-6 col-md-3">
-						      	<input type="checkbox" name="discipline_group[]" value="1" /> Animal Techniques
-						    </label>
-							<label class="col-xs-6 col-md-3">
-						      	<input type="checkbox" name="discipline_group[]" value="2" /> Biochecmistry
-						    </label>
-						    <label class="col-xs-6 col-md-3">
-						      	<input type="checkbox" name="discipline_group[]" value="3" /> Bioinformatics & Biostatistics
-						    </label>
-						    <label class="col-xs-6 col-md-3">
-						      	<input type="checkbox" name="discipline_group[]" value="4" /> Cell Biology
-						    </label>
-						</div>
-						<div class="row">
-							<label class="col-xs-6 col-md-3">
-						      	<input type="checkbox" name="discipline_group[]" value="5" /> Developmental Biology
-						    </label>
-							<label class="col-xs-6 col-md-3">
-						      	<input type="checkbox" name="discipline_group[]" value="6" /> Essential Data
-						    </label>
-						    <label class="col-xs-6 col-md-3">
-						      	<input type="checkbox" name="discipline_group[]" value="7" /> General Lab Techniques
-						    </label>
-						    <label class="col-xs-6 col-md-3">
-						      	<input type="checkbox" name="discipline_group[]" value="8" /> Genetics & Genomics
-						    </label>
-						</div>
-						<div class="row">
-							<label class="col-xs-6 col-md-3">
-						      	<input type="checkbox" name="discipline_group[]" value="9" /> Histology
-						    </label>
-							<label class="col-xs-6 col-md-3">
-						      	<input type="checkbox" name="discipline_group[]" value="10" /> Imaging Techniques
-						    </label>
-						    <label class="col-xs-6 col-md-3">
-						      	<input type="checkbox" name="discipline_group[]" value="11" /> Immuology
-						    </label>
-						    <label class="col-xs-6 col-md-3">
-						      	<input type="checkbox" name="discipline_group[]" value="12" /> Media & Solutions
-						    </label>
-						</div>
-						<div class="row">
-							<label class="col-xs-6 col-md-3">
-						      	<input type="checkbox" name="discipline_group[]" value="13" /> Microbiology
-						    </label>
-							<label class="col-xs-6 col-md-3">
-						      	<input type="checkbox" name="discipline_group[]" value="14" /> Model Organisms
-						    </label>
-						    <label class="col-xs-6 col-md-3">
-						      	<input type="checkbox" name="discipline_group[]" value="15" /> Molecular Biology
-						    </label>
-						    <label class="col-xs-6 col-md-3">
-						      	<input type="checkbox" name="discipline_group[]" value="16" /> Neuroscience
-						    </label>
-						</div>
-						<div class="row">
-							<label class="col-xs-6 col-md-3">
-						      	<input type="checkbox" name="discipline_group[]" value="17" /> Physiology
-						    </label>
-							<label class="col-xs-6 col-md-3">
-						      	<input type="checkbox" name="discipline_group[]" value="18" /> Plant Biology
-						    </label>
-						    <label class="col-xs-6 col-md-3">
-						      	<input type="checkbox" name="discipline_group[]" value="19" /> Research Tools
-						    </label>
-						</div>
+					<div class="col-lg-10 row">
+						<!-- BEGIN categories -->
+						<label class="col-xs-6 col-md-3">
+					      	<input type="checkbox" name="discipline_group[]" value="{categories.cid}" /> {categories.name}
+					    </label>
+						<!-- END categories -->
 					</div>
 				</div>
 
