@@ -22,12 +22,14 @@ var _ = require('underscore')._,
 		app.route('/').get(params.middleware.buildHeader, renderHomepage);
 		app.route('/api').get(function(req, res, next) {
 			res.json({template: {name: "home"}});
-			//res.json({});
 		});
 		app.get('/confirmation-email-sent', params.middleware.buildHeader, renderConfirmEmailNotification);
 		app.get('/complete-user-info', params.middleware.buildHeader, fillAdditionalInfo);
 		
-		app.get('/institution', params.middleware.buildHeader, renderInstitutionPage);	
+		app.get('/institution', params.middleware.buildHeader, renderInstitutionPage);
+		app.route('/api/institution').get(function(req, res, next) {
+			res.json({template: {name: "institution"}});
+		});	
 		callback();
 	};
 
