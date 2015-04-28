@@ -58,22 +58,22 @@
 									<hr>
 								</h3>
 								<h4><strong>Purpose</strong></h4>
-								<div component="post/content" itemprop="text">{posts.content.purpose}</div>
+								<div component="post/content" itemprop="text" class="post-purpose">{posts.content.purpose}</div>
 								<br>
 								<h4><strong>Reagents</strong></h4>
-								<div component="post/content" itemprop="text">{posts.content.reagents}</div>
+								<div component="post/content" itemprop="text" class="post-reagents">{posts.content.reagents}</div>
 								<br>
 								<h4><strong>Procedure</strong></h4>
-								<div component="post/content" itemprop="text">{posts.content.procedure}</div>
+								<div component="post/content" itemprop="text" class="post-procedure">{posts.content.procedure}</div>
 								<br>
 								<h4><strong>Expected Result</strong></h4>
-								<div component="post/content" itemprop="text">{posts.content.result}</div>
+								<div component="post/content" itemprop="text" class="post-result">{posts.content.result}</div>
 								<br>
 								<h4><strong>Reference</strong></h4>
-								<div component="post/content" itemprop="text">{posts.content.reference}</div>
+								<div component="post/content" itemprop="text" class="post-reference">{posts.content.reference}</div>
 								<br>
 								<!-- ELSE -->
-								<div component="post/content" class="post-content" itemprop="text">{posts.content}</div>
+								<div component="post/content" itemprop="text" class="post-content">{posts.content}</div>
 								<!-- ENDIF !posts.index -->
 								<!-- IF posts.user.signature -->
 								<div class="post-signature">{posts.user.signature}</div>

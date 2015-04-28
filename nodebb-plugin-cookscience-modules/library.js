@@ -10,6 +10,9 @@ var _ = require('underscore')._,
 	function renderHomepage(req, res, next){
 		res.render('home', {});
 	}
+	function renderInstitutionPage(req, res, next){
+		res.render('institution', {});
+	}
 
 	Plugin.init = function(params, callback) {
 		var app = params.router,
@@ -24,6 +27,7 @@ var _ = require('underscore')._,
 		app.get('/confirmation-email-sent', params.middleware.buildHeader, renderConfirmEmailNotification);
 		app.get('/complete-user-info', params.middleware.buildHeader, fillAdditionalInfo);
 		
+		app.get('/institution', params.middleware.buildHeader, renderInstitutionPage);	
 		callback();
 	};
 
