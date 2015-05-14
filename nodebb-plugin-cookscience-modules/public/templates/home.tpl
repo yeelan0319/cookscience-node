@@ -40,7 +40,7 @@
 				</div>
 				<div class="col-md-2">
 					<div class="badge-item">
-						<h4 class="institution-name">Havard</h4>
+						<h4 class="institution-name">Harvard</h4>
 						<ul class="list-unstyled">
 							<li><i class="fa fa-pencil-square-o"></i> 5</li>
 							<li><i class="fa fa-trophy"></i> 20</li>

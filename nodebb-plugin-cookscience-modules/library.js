@@ -24,7 +24,6 @@ var _ = require('underscore')._,
 			res.json({template: {name: "home"}});
 		});
 		app.get('/confirmation-email-sent', params.middleware.buildHeader, renderConfirmEmailNotification);
-		app.get('/complete-user-info', params.middleware.buildHeader, fillAdditionalInfo);
 		
 		app.get('/institution', params.middleware.buildHeader, renderInstitutionPage);
 		app.route('/api/institution').get(function(req, res, next) {
@@ -42,20 +41,16 @@ var _ = require('underscore')._,
 		callback(null, params);
 	}
 
-	function fillAdditionalInfo(req, res, callback){
-		if(req.uid){
-			categories.getAllCategories(req.uid, function(err, categories){
-				if(err){
-					return callback(new Error('[[error:not-logged-in]]'));
-				}
-				res.render('userInfo', {uid: req.uid, categories: categories});
-			});	
-		}
-		else{
-			return callback(new Error('[[error:not-logged-in]]'));
-		}	
-	};
-
+	Plugin.attachDisciplineInfo = function(params, callback){
+		categories.getAllCategories(0, function(err, categories){
+			params.templateData.categories = categories;
+			callback(null, params);
+		});
+	}
+	Plugin.addCustomFieldInRegister = function(params, callback){
+		params = ['fullname', 'institution', 'lab', 'discipline', 'receiveAd'];
+		callback(null, params);
+	}
 	Plugin.addCustomFieldInProfileEdit = function(params, callback){
 		params.fields = params.fields.concat(['institution', 'lab', 'discipline', 'receiveAd']);
 		callback(null, params);

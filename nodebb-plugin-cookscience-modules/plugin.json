@@ -6,7 +6,9 @@
 	"hooks": [
 
 		{ "hook": "static:app.load", "method": "init"},
+		{ "hook": "filter:register.build", "method": "attachDisciplineInfo"},
 		{ "hook": "filter:register.complete", "method": "addCustomRegisterStep"},
+		{ "hook": "filter:user.custom_fields", "method": "addCustomFieldInRegister"},
 		{ "hook": "filter:user.updateProfile", "method": "addCustomFieldInProfileEdit"},
 		{ "hook": "filter:user.account", "method": "showUserProtocolPostNumberInProfile"}
 		
