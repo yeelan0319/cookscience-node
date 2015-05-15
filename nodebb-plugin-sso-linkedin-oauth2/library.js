@@ -43,7 +43,7 @@
 					scope: ['r_basicprofile', 'r_emailaddress', 'w_share', 'rw_groups'],
 					state: true
 				}, function(accessToken, refreshToken, profile, done) {
-					LinkedIn.login(profile.id, profile.displayName, profile._json.emailAddress, profile._json.pictureUrl, (profile._json.location ? profile._json.location.name : null), profile._json.publicProfileUrl, function(err, user) {
+					LinkedIn.login(profile.id, profile.displayName, profile._json.emailAddress, profile._json.pictureUrl, (profile._json.location ? profile._json.location.name : null), profile._json.publicProfileUrl, profile._json.positions.values[0].company.name, function(err, user) {
 						if (err) {
 							return done(err);
 						}
@@ -64,7 +64,7 @@
 		});
 	};
 
-	LinkedIn.login = function(linkedInId, handle, email, picture, location, website, callback) {
+	LinkedIn.login = function(linkedInId, handle, email, picture, location, website, institution, callback) {
 		LinkedIn.getUidByLinkedInId(linkedInId, function(err, uid) {
 			if(err) {
 				return callback(err);
@@ -81,7 +81,8 @@
 					// Save linkedin-specific information to the user
 					var data = {
 						linkedInId: linkedInId,
-						fullname: handle
+						fullname: handle,
+						institution: institution
 					};
 
 					if (!merge) {
